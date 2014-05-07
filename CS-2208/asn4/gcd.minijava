@@ -1,0 +1,22 @@
+iread
+istore 0
+iread
+dup
+istore 1
+istore 2
+goto 24
+pop
+iload 1
+istore 2
+iload 0
+iload 1
+irem
+istore 1
+iload 2
+istore 0
+goto 5
+iload 1
+iload 0
+ifeq 24
+iprint
+return

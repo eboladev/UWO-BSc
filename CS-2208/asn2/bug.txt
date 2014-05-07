@@ -1,0 +1,5 @@
+missing a delay slot after the bg check. Program will enter the branch and
+then while that code is executing it will have fetched the next
+instruction which will incrimented the value in %l0. When running through
+the debugger we notice that the code gets stuck in an infinite loop
+because of what I described is happen above.

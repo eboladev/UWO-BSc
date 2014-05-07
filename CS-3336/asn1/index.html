@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-US" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Matthew Stokes | CS3336 HW Assignment 1</title>
+
+<script src="./js/jQuery/jquery-1.6.4.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="./css/hw1.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+	$(document).ready(function() {
+			$("#small1").click(function(event){
+				$(".active").removeClass("active");
+				$("#large1").addClass("active");
+			});
+			$("#small2").click(function(event){
+				$(".active").removeClass("active");
+				$("#large2").addClass("active");
+			});
+			$("#small3").click(function(event){
+				$(".active").removeClass("active");
+				$("#large3").addClass("active");
+			});
+			$("#small4").click(function(event){
+				$(".active").removeClass("active");
+				$("#large4").addClass("active");
+			});
+
+			$('#next').click(function(event){
+				if($(".active").next().length>0){
+				var current = $(".active");
+				$(".active").next().addClass("active");
+				current.removeClass("active");
+				}
+				else{
+				$(".active").removeClass("active");
+				$("#large1").addClass("active");
+				}
+				});
+
+			$('#previous').click(function(event){
+				if($(".active").prev().length>0){
+				var current = $(".active");
+				$(".active").prev().addClass("active");
+				current.removeClass("active");
+				}
+				else{
+				$(".active").removeClass("active");
+				$("#large4").addClass("active");
+				}
+				});
+
+			$('.mainbody').bind('dragstart', function(event) { event.preventDefault(); });
+	});
+</script>
+
+</head>
+
+<body>
+
+<div class="mainbody">
+	<img src="img/banner.jpg" width="952px" height="80px" alt="Image Not Found"></img>
+
+	<div class="leftSide">
+		<img class="picture" id="small1" src="img/thumb/image1.jpg" width="200px" height="150px" alt="Image Not Found"></img>
+		<img class="picture" id="small2" src="img/thumb/image2.jpg" width="200px" height="150px" alt="Image Not Found"></img>
+	</div>
+	<div class="middle">
+		<div class="middleImages">
+			<img class="active" id="large1" src="img/image1.jpg" width="500px" height="320px" alt="Image Not Found"></img>
+			<img id="large2" src="img/image2.jpg" width="500px" height="320px" alt="Image Not Found"></img>
+			<img id="large3" src="img/image3.jpg" width="500px" height="320px" alt="Image Not Found"></img>
+			<img id="large4" src="img/image4.jpg" width="500px" height="320px" alt="Image Not Found"></img>
+		</div>
+		<a href="#" class="button" id="next">Next</a>
+		<a href="#" class="button" id="previous">Previous</a>
+	</div>
+	<div class="rightSide">
+		<img class="picture" id="small3" src="img/thumb/image3.jpg" width="200px" height="150px" alt="Image Not Found"></img>
+		<img class="picture" id="small4" src="img/thumb/image4.jpg" width="200px" height="150px" alt="Image Not Found"></img>
+	</div>
+
+</div>
+</body>
+</html>

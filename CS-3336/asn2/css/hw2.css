@@ -1,0 +1,38 @@
+body {
+	padding:0px;
+	margin:0px;
+	font-size: 12px;
+	font-family: arial, sans-serif;  
+	color:#000;
+}
+#mainbody {
+	width: 500px;
+	position: relative;
+	margin: 60px auto;
+}
+#left {
+		display: inline-block;
+		width: 250px;
+		float: left;
+}
+#right{
+		display: inline-block;
+		width: 250px;
+		float: right;
+}
+#date_div{
+		height: 110px;
+		display: block;
+}
+#display_div{
+		height: 40px;
+		display: block;
+		color: #FF0000;
+		margin: 0px;
+		font-size: 150%; 
+}
+#tooltip_div{
+		margin-top: 15px;
+		color: #AAAAAA; 
+		font-size: 10px;
+}

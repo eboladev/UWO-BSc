@@ -1,0 +1,317 @@
+/*
+Login **FROM Dr. Babanski, Assignment 4**
+*/
+
+body
+{
+	padding:0;
+	margin:0;
+	color:#000;
+	font-family: arial, sans-Serif;
+	font-size: 13px;
+}
+
+#mainBody 
+{
+	width: 310px;
+	position: relative;
+	margin: 70px auto;
+	padding-top: 7px;
+}
+
+
+#inputArea
+{
+	font-family: Arial, Sans-Serif;
+	font-size: 13px;
+	background-color: #d6e5f4;
+	padding: 10px;
+	width:310px;
+}
+
+#inputArea input, 
+#inputArea textarea,
+#inputArea select
+{
+	font-family: Arial, Sans-Serif;
+	font-size: 13px;
+	margin-bottom: 5px;
+	display: block;
+	padding: 4px;
+	width: 300px;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	background-color: #ffffff;
+	border: solid 1px #33677F;
+	overflow: hidden;
+}
+
+
+#inputArea input.submit 
+{
+	font-family: Arial, Sans-Serif;
+	font-size: 15px;
+	display: block;
+	width: 100px;
+	color: #fff;
+	background-color: #5384c6;
+	margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+
+#inputArea input.submit:hover 
+{
+	position: relative;
+	top: 1px;
+	left: 1px;
+	background-color: #f00;
+}
+
+
+
+#inputArea span
+{
+	font-family: Arial, Sans-Serif;
+	font-size: 11px;
+	display: block;
+	margin-top: -2px;
+	padding-bottom: 20px;
+	width: 300px;
+	color: #f50213;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-ms-box-sizing: content-box
+}
+
+/*
+* Main/Account Page
+*/
+
+#mainPage
+ {
+	display: block;
+	width: 940px;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#mainPage p 
+{
+	display: block;
+	margin: 10px 0;
+	color: #2BA8DC;
+}
+
+/* Top Bar -- Start*/
+#header 
+{
+	margin-top: 10px;
+	background-color: #2BA8DC;
+	text-align: right;
+	padding: 10px 10px 12px 10px;
+}
+
+a#logout 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+a#logout:hover,
+a#logout:focus 
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+/* Top Bar -- End*/
+
+#body
+ {
+	margin-top: 5px;
+}
+
+/* Date Field -- Start*/
+#left 
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 190px;
+	height: 420px;
+}
+
+.dob, label 
+{
+	color: #2BA8DC;
+	font-size: 14px;
+}
+
+.dob
+ {
+	margin-bottom: 15px;
+}
+
+label 
+{
+	line-height: 24px;
+}
+
+#dob_field, #dob_button 
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#dob_field 
+{
+	width: 100px;
+}
+
+#dob_button
+ {
+    background-repeat: no-repeat;
+    height: 24px;
+    margin-top: -1px;
+	margin-left: 2px;
+    width: 30px;
+}
+
+#dob_button > img 
+{
+    margin-top: -3px;
+}
+
+#mainPage p#error 
+{
+	color: #DC2B44;
+	display: none;
+	font-size: 14px;
+	margin-top: 15px;
+}
+/* Date Field -- End*/
+
+#right 
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 746px;
+	height: 420px;
+}
+
+/* Forwards Dates -- Start*/
+#forward 
+{
+	width: 42px;
+	height: 420px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+a#next 
+{
+	width: 42px;
+	height: 128px;
+	background-image: url('../images/next.png');
+	display: block;
+	margin-top: 120px;
+}
+
+a#next:hover,
+a#next:focus 
+{
+	background-image: url('../images/next_hover.png');
+}
+/* Forwards Dates -- End*/
+
+/* Backwards Dates -- Start*/
+#backward 
+{
+	width: 42px;
+	height: 420px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+a#prev 
+{
+	width: 42px;
+	height: 128px;
+	background-image: url('../images/prev.png');
+	display: block;
+	margin-top: 120px;
+}
+
+a#prev:hover,
+a#prev:focus 
+{
+	background-image: url('../images/prev_hover.png');
+}
+/* Backwards Dates -- End*/
+
+#biorhythm 
+{
+	display: inline-block;
+	width: 654px;
+	vertical-align: top;
+	height: 420px;
+}
+
+/* Biorhythm -- Start*/
+#biorhythm p 
+{
+}
+
+#biorhythm img 
+{
+}
+
+#image 
+{
+	display: inline-block;
+	width: 475px;
+	height: 390px;
+	margin-left: 60px;
+}
+
+#loading_gif 
+{
+    display: block;
+    left: 133px;
+    position: relative;
+    top: -300px;
+}
+/* Biorhythm -- End*/
+
+/* Legend **Figured out you could generate a legend from google charts after this was working** --Start */
+#legend
+ {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	width: 115px;
+	height: 50px;
+	font-size: 13px;
+}
+
+#legend ul 
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #777777;
+}
+
+#legend ul li 
+{
+}
+
+#legend ul li img 
+{
+	margin-right: 5px;
+}
+/* Legend **Figured out you could generate a legend from google charts after this was working** --End */

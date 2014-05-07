@@ -1,0 +1,1 @@
+reverses the byte values in register %l0 storing them into %l1
